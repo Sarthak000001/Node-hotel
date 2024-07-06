@@ -26,7 +26,7 @@ app.get('/',(req, res) => res.send('Welcome to Our Hotel!'))
 // app.get('/',logRequest ,(req, res) => res.send('Welcome to Our Hotel!'))
 
 
-app.use('/person',localAuthMiddleware,personRoute);
+app.use('/person',personRoute);
 app.use('/menu',menuItemRoute)
 
 
